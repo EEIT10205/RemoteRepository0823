@@ -11,5 +11,7 @@ public class ContextLoaderListenerRegistry extends AbstractContextLoaderInitiali
 				new AnnotationConfigWebApplicationContext();
 		context.register(SpringJavaConfiguration.class);
 		return context;
+		
+		//test
 	}
 }
