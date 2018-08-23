@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package config;
 
 import org.springframework.web.context.AbstractContextLoaderInitializer;
@@ -13,3 +14,27 @@ public class ContextLoaderListenerRegistry extends AbstractContextLoaderInitiali
 		return context;
 	}
 }
+=======
+package config;
+
+import org.springframework.web.context.AbstractContextLoaderInitializer;
+import org.springframework.web.context.WebApplicationContext;
+import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
+
+public class ContextLoaderListenerRegistry extends AbstractContextLoaderInitializer {
+	@Override
+	protected WebApplicationContext createRootApplicationContext() {
+		AnnotationConfigWebApplicationContext context =
+				new AnnotationConfigWebApplicationContext();
+		context.register(SpringJavaConfiguration.class);
+		return context;
+		//123
+		//test
+		
+		//test2
+		//test3
+		
+		//test4
+	}
+}
+>>>>>>> branch 'master' of https://github.com/EEIT10205/RemoteRepository0823.git
